@@ -5,7 +5,7 @@ from datetime import datetime
 class Transaction(BaseModel):
     id: str = Field(..., alias="_id")
     value: float
-    payment_date: str
+    payment_date: datetime
     account: str
     receipt_link: str
     obs: str
